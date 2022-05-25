@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" ></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <title>validation form</title>
+  </head>
+  <body>
+      <form class="ui form">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="first-name" id="name" placeholder="enter a name" required>
+          <span id="errorname"></span>
+        </div>
+        <div class="field">
+          <label>Age</label>
+          <input type="number" name="last-name" id="age" placeholder="enter a Age" required>
+          <span id="errorage"></span>
+        </div>
+        <div class="field">
+          <label>Address</label>
+          <input name="address" rows="4" cols="20" id="address" placeholder="enter a address" > </input>
+          <span id="erroradd"></span>
+          </div>
+        <button class="ui button" id='submit' type="submit">Submit</button>
+      </form>
+
+
+
+    <!-- <script>
+        //   function func1() {
+        //     let a = 12;
+        //     func2(a);
+
+        //     function func2(a) {
+        //       let b = 10;
+        //       func3(a, b);
+
+        //       function func3(a, b) {
+        //         var c = 2;
+        //         console.log(a + b + c);
+        //       }
+        //     }
+        //   }
+        //   func1();
+        function x() {
+          var a = 5;
+          function y() {
+            console.log(a);
+          }
+          return y;
+          a = 2;
+        }
+        let z = x();
+        z();
+
+        const thenable = {
+        then: function(callback) {
+          setTimeout(() => callback(2), 100);
+        }
+      };
+      const value = await thenable;
+      console.log(value);
+    </script> -->
+    <script src="Viewform.js"></script>
+  </body>
+</html>
